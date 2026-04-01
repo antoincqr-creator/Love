@@ -1,36 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exclusivamente você </title>
-    <link rel="stylesheet" href="carta.css">;
+    <title>Exclusivamente você</title>
+    <link rel="stylesheet" href="carta.css">
 </head>
 <body>
-    <canvas id="coracao"></canvas>
-
-    <div class="mensagem">
-        <h2>Oiii, tudo bem meu amor?EUUU TEEE AMMMOOOO e eu fiz essa carta pra você, espero que goste mmmttttttt hihihihi.
-            Amor, você não tem ideia o quanto vc mudou minha vida e fica mudando, ver você sempre empenhada em ajudar outras pessoas, ir a igreja, conversar..
-            Isso me inspira muuuito. Eu quero me tornar cada bez mais e mais certo pra vc, quero que vc tenha o meu melhor, muuitas vezes. Eu te amo como nunca pensei
-            que poderia amar alguém e não é algo intenso como eu imaginava na minha fincância, mas algo leve, maduro e muito diverito, ninguém se rebaixa para tera atenção do outrou ou pede o mínimo...
-            Quero que saiba que vc é incrivel meu bem muuuito incrível msm, minha mulher maravilha, minha princesa e o amor da e para minha vida de hj para todo sempre. Você é minha eprfeição e minha benção
-            que vou me esforçar para ter. Eu te amo de todo o meu coração, &#10084;
-            I LOVE YOU FOR ALL MY LIFE AND BEFORE THERE &#10084;&#10084;&#10084;&#10084;&#10084;
-        </h2>
-            <spam id="cartaDe">Uma carte de : Antonio Carlos Sampaio Evangetlista</spam><br>
-    <spam id="para">Para o amor de sua vida: Evila Vini Souza da Silva (meu amor para sempre) </spam>    
-    
+    <div id="overlay">
+        <button id="btnAbrir">Clique para ouvir e abrir ❤️</button>
     </div>
 
-<div id="overlay" style="position:fixed; top:0; left:0; width:100%; height:100%; background:#ffc0cb; display:flex; justify-content:center; align-items:center; z-index:1000;">
-    <button id="btnAbrir" style="padding:20px 40px; font-size:1.2rem; border:none; border-radius:50px; background:#ff1493; color:white; cursor:pointer;">Clique para ouvir e abrir ❤️</button>
-</div>
+    <div id="conteudoCarta" style="display: none;">
+        <canvas id="coracao"></canvas>
 
-<div style="display:none">
-    <iframe id="musica" width="0" height="0" src="https://www.youtube.com/embed/k7fihig4u0Y?enablejsapi=1" frameborder="0" allow="autoplay"></iframe>
-</div>
+        <div class="mensagem">
+            <h2>Oiii, tudo bem meu amor? EUUU TEEE AMMMOOOO e eu fiz essa carta pra você...</h2>
+            <p>Amor, você não tem ideia o quanto vc mudou minha vida e fica mudando, ver você sempre empenhada em ajudar outras pessoas, ir a igreja, conversar.. Isso me inspira muuuito. Eu quero me tornar cada vez mais e mais certo pra vc, quero que vc tenha o meu melhor. Eu te amo como nunca pensei que poderia amar alguém...</p>
+            <p>Quero que saiba que vc é incrivel meu bem muuuito incrível msm, minha mulher maravilha, minha princesa e o amor da e para minha vida de hj para todo sempre. Você é minha perfeição e minha benção que vou me esforçar para ter. Eu te amo de todo o meu coração, ❤️</p>
+            <p>I LOVE YOU FOR ALL MY LIFE AND BEFORE THERE ❤️❤️❤️❤️❤️</p>
+            
+            <span id="cartaDe">Uma carta de: Antonio Carlos Sampaio Evangelista</span><br>
+            <span id="para">Para o amor de sua vida: Evila Vini Souza da Silva</span>
+        </div>
 
-<script src="coração.js"></script>
+        <div style="display:none">
+            <iframe id="musica" width="0" height="0" src="https://www.youtube.com/embed/k7fihig4u0Y?enablejsapi=1" frameborder="0" allow="autoplay"></iframe>
+        </div>
+    </div>
+
+    <script src="coracao.js"></script>
 </body>
 </html>

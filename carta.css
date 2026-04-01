@@ -1,19 +1,18 @@
-body{
-    margin:  0;
+body {
+    margin: 0;
     padding: 0;
     min-height: 100vh;
-    
     display: flex;
     justify-content: center;
     align-items: start;
     padding-top: 10%;
-
-    background:url('EuEEla2.jpeg') repeat;
+    background: url('EuEEla2.jpeg') repeat;
     background-size: 300px;
     font-family: 'Segoe UI', sans-serif;
     overflow-x: hidden;
 }
-#coracao{
+
+#coracao {
     position: fixed;
     top: 10px;
     right: 10px;
@@ -23,46 +22,61 @@ body{
     height: auto;
     z-index: 10;
 }
-.mensagem{
+
+.mensagem {
     background-color: rgba(255, 255, 255, 0.95);
     padding: 25px;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-
     width: 85%;
     max-width: 500px;
     margin: 20px;
-
-    box-sizing:border-box;
+    box-sizing: border-box;
     text-align: left;
     color: #333;
     line-height: 1.6;
 }
-h2{
+
+h2 {
     color: #ff69b4;
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 15px;
 }
 
-@media (max-width: 480px){
-    .mensagem{
+#cartaDe, #para {
+    color: #ff69b4;
+    font-weight: bold;
+}
+
+/* Estilo do Overlay */
+#overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#btnAbrir {
+    padding: 20px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background: #ff1493;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 480px) {
+    .mensagem {
         padding: 15px;
         width: 90%;
     }
-    h2{ 
-        font-size: 1,2rem;
-    }
-    p{
-        font-size: 1rem;
-    }
-    #coracao{
-        top: 5px;
-        right: 5px;
-    }
-
-#cartaDe{
-    color: #ff69b4;
-    font-size: 1.3rem
-}
-}
+    h2 { font-size: 1.2rem; }
+    #coracao { top: 5px; right: 5px; }
+} /* Chave que estava faltando */
