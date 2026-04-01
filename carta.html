@@ -23,15 +23,12 @@
     
     </div>
 
+<div id="overlay" style="position:fixed; top:0; left:0; width:100%; height:100%; background:#ffc0cb; display:flex; justify-content:center; align-items:center; z-index:1000;">
+    <button id="btnAbrir" style="padding:20px 40px; font-size:1.2rem; border:none; border-radius:50px; background:#ff1493; color:white; cursor:pointer;">Clique para ouvir e abrir ❤️</button>
+</div>
 
-    <div style="position: absolute; visibility: hidden; width: 0; height: 0;">
-    <iframe 
-        id="playerYoutube"
-        width="0" 
-        height="0" 
-        src="https://www.youtube.com/embed/ID_DO_VIDEO?enablejsapi=1&autoplay=1&mute=0" 
-        allow="autoplay">
-    </iframe>
+<div style="display:none">
+    <iframe id="musica" width="0" height="0" src="https://www.youtube.com/embed/k7fihig4u0Y?enablejsapi=1" frameborder="0" allow="autoplay"></iframe>
 </div>
 
 <script src="coração.js"></script>

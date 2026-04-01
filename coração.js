@@ -1,3 +1,18 @@
+const btn = document.getElementById('btnAbrir');
+const overlay = document.getElementById('overlay');
+const iframe = document.getElementById('musica');
+
+btn.addEventListener('click', () => {
+    // Esconde a tela de aviso
+    overlay.style.display = 'none';
+
+    // O PULO DO GATO: Atualiza o link para tocar sozinho após o clique
+    iframe.src = "https://www.youtube.com/embed/k7fihig4u0Y?autoplay=1";
+    
+    // Se você tiver uma função que desenha o coração, chame ela aqui embaixo:
+    // iniciarDesenho(); 
+});
+
 window.addEventListener('load', () => {
 
     const canvas = document.getElementById('coracao');
@@ -39,17 +54,3 @@ window.addEventListener('load', () => {
     }
     desenhaLoop();  
 });
-function tocarMusica() {
-    const iframe = document.getElementById('playerYoutube');
-    if (iframe) {
-        // Atualiza o SRC para forçar o autoplay após o clique dela
-        const currentSrc = iframe.src;
-        if (!currentSrc.includes('played=true')) {
-            iframe.src = currentSrc + "&played=true";
-        }
-    }
-}
-
-// Escuta cliques e toques no celular
-document.addEventListener('click', tocarMusica, { once: true });
-document.addEventListener('touchstart', tocarMusica, { once: true });
